@@ -25,9 +25,6 @@ dependencies {
   addDependencies(this, ["implementation", "apiElements"], "6.0-SNAPSHOT", [
     "io.github.lambdaprime:jrosclient"
   ]);
-  addDependencies(this, ["implementation", "apiElements"], "20.0", [
-    "io.github.lambdaprime:id.xfunction"
-  ]);
 }
 
 jar { 
