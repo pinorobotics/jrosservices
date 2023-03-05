@@ -36,6 +36,10 @@ import pinorobotics.jrosservices.JRosServiceClient;
  *
  * @param <R> request message type
  * @param <A> response message type
+ * @see <a
+ *     href="https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html">Defining
+ *     services in ROS2</a>
+ * @see <a href="http://wiki.ros.org/srv">Defining services in ROS1</a>
  * @author lambdaprime intid@protonmail.com
  */
 public interface ServiceDefinition<R extends Message, A extends Message> {

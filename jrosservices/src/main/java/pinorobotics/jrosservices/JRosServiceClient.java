@@ -19,21 +19,28 @@ package pinorobotics.jrosservices;
 
 import id.jrosmessages.Message;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Future;
 
 /**
  * Client which allows to interact with ROS Services.
  *
+ * @see <a href="https://github.com/pinorobotics/jros2services">jros2services (ROS2
+ *     implementation)</a>
+ * @see <a href="https://github.com/pinorobotics/jros1services">jros1services (ROS1
+ *     implementation)</a>
  * @see <a
  *     href="https://docs.ros.org/en/galactic/Tutorials/Services/Understanding-ROS2-Services.html">ROS2
  *     Services</a>
  * @see <a href="http://wiki.ros.org/Services">ROS1 Services</a>
- * @see <a href="https://github.com/pinorobotics/jros2services">jros2services</a>
- * @see <a href="https://github.com/pinorobotics/jros1services">jros1services</a>
  * @param <R> request message type
  * @param <A> response message type
  * @author lambdaprime intid@protonmail.com
  */
 public interface JRosServiceClient<R extends Message, A extends Message> extends AutoCloseable {
 
+    /**
+     * Send request to ROS service and return a {@link Future} which completes when service execute
+     * the request and sends it back.
+     */
     CompletableFuture<A> sendRequestAsync(R requestMessage);
 }
