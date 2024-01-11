@@ -10,7 +10,7 @@ Java 17+
 
 # Download
 
-[Release versions](https://github.com/pinorobotics/jrosservices/releases)
+[Release versions](jrosservices/release/CHANGELOG.md)
 
 Or you can add dependency to it as follows:
 
@@ -18,7 +18,7 @@ Gradle:
 
 ```
 dependencies {
-    implementation 'io.github.pinorobotics:jrosservices:1.0'
+  implementation 'io.github.pinorobotics:jrosservices:1.0'
 }
 ```
 
@@ -28,6 +28,6 @@ dependencies {
 
 [Development](DEVELOPMENT.md)
 
-# Contributors
+# Contacts
 
 lambdaprime <intid@protonmail.com>
