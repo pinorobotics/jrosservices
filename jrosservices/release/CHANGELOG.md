@@ -1,3 +1,12 @@
+# Version 2
+
+- Adding Android build
+- Adding metrics
+- Updating Gradle files
+- Updating comments
+
+[jrosservices-v2.0.zip](https://github.com/pinorobotics/jrosservices/raw/main/jrosservices/release/jrosservices-v2.0.zip)
+
 # Version 1
 
 - Removing unnecessary dependency
