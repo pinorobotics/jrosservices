@@ -49,6 +49,9 @@ javadoc {
   options.noNavBar = true
   // ignore missing @return, @param etc
   options.addBooleanOption('Xdoclint:all,-missing', true)
+  // should point to location of element-list files
+  options.addStringOption('link', 'http://portal2.atwebpages.com/jrosclient/javadoc/jrosclient/')
+  options.addStringOption('link', 'http://portal2.atwebpages.com/jrosclient/javadoc/jrosmessages/')
   exclude 'pinorobotics/jrosservices/impl/**'
 }
 

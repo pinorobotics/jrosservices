@@ -1,3 +1,9 @@
+# Version 3
+
+- Updating to jrosclient v8
+
+[jrosservices-v3.0.zip](https://github.com/pinorobotics/jrosservices/raw/main/jrosservices/release/jrosservices-v3.0.zip)
+
 # Version 2
 
 - Adding Android build
