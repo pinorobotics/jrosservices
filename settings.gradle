@@ -1,1 +1,2 @@
-include 'jrosservices'
+include "${zzName}"
+include "${zzName}.tests"
