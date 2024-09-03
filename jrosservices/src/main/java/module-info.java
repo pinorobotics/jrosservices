@@ -32,8 +32,10 @@ module jrosservices {
     // since many of our API relies on jrosclient classes we need to ensure
     // that all modules reading this module also read jrosclient
     requires transitive jrosclient;
+    requires id.xfunction;
 
     exports pinorobotics.jrosservices;
     exports pinorobotics.jrosservices.msgs;
     exports pinorobotics.jrosservices.exceptions;
+    exports pinorobotics.jrosservices.std_srvs;
 }
