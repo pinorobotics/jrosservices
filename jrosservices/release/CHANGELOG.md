@@ -1,3 +1,11 @@
+# Version 4
+
+- Updating dependencies
+- Adding std_srvs definitions
+- Updating gradle files
+
+[jrosservices-v4.0.zip](https://github.com/pinorobotics/jrosservices/raw/main/jrosservices/release/jrosservices-v4.0.zip)
+
 # Version 3
 
 - Updating to jrosclient v8
