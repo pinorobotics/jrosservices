@@ -15,20 +15,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package pinorobotics.jrosservices;
+package pinorobotics.jrosservices.metrics;
+
+import id.jrosclient.JRosClientMetrics;
 
 /**
  * List of metrics emitted by <b>jrosservices</b>.
  *
+ * <p><b>jrosservices</b> metrics are integrated with <a
+ * href="https://opentelemetry.io/">OpenTelemetry</a>.
+ *
+ * <p>To receive OpenTelemetry metrics users suppose to configure OpenTelemetry exporter. List of
+ * Java exporters can be found in <a
+ * href="https://opentelemetry.io/ecosystem/registry/?language=java&component=exporter">OpenTelemetry
+ * registry</a> or in <a
+ * href="https://github.com/lambdaprime/opentelemetry-exporters-pack">opentelemetry-exporters-pack</a>
+ *
+ * @see JRosClientMetrics
  * @author lambdaprime intid@protonmail.com
  */
 public interface JRosServiceClientMetrics {
 
-    String REQUESTS_METRIC = "service_sent_requests";
-    String REQUESTS_METRIC_DESCRIPTION = "Number of requests sent to ROS services";
+    String REQUESTS_COUNT_METRIC = "service_sent_requests_total";
+    String REQUESTS_COUNT_METRIC_DESCRIPTION = "Number of requests sent to ROS services";
 
-    String RESPONSES_METRIC = "service_received_responses";
-    String RESPONSES_METRIC_DESCRIPTION = "Number of responses received from ROS services";
+    String RESPONSES_COUNT_METRIC = "service_received_responses_total";
+    String RESPONSES_COUNT_METRIC_DESCRIPTION = "Number of responses received from ROS services";
 
     String GOAL_EXECUTION_TIME_METRIC = "service_exec_time_ms";
     String GOAL_EXECUTION_TIME_METRIC_DESCRIPTION =

@@ -38,4 +38,5 @@ module jrosservices {
     exports pinorobotics.jrosservices.msgs;
     exports pinorobotics.jrosservices.exceptions;
     exports pinorobotics.jrosservices.std_srvs;
+    exports pinorobotics.jrosservices.metrics;
 }
