@@ -17,6 +17,7 @@
  */
 package pinorobotics.jrosservices.std_srvs;
 
+import id.jrosmessages.MessageDescriptor;
 import pinorobotics.jrosservices.msgs.ServiceDefinition;
 
 /** Definition for std_srvs/srv/Trigger */
@@ -24,12 +25,12 @@ public class TriggerServiceDefinition
         implements ServiceDefinition<TriggerRequestMessage, TriggerResponseMessage> {
 
     @Override
-    public Class<TriggerRequestMessage> getServiceRequestMessage() {
-        return TriggerRequestMessage.class;
+    public MessageDescriptor<TriggerRequestMessage> getServiceRequestMessage() {
+        return new MessageDescriptor<>(TriggerRequestMessage.class);
     }
 
     @Override
-    public Class<TriggerResponseMessage> getServiceResponseMessage() {
-        return TriggerResponseMessage.class;
+    public MessageDescriptor<TriggerResponseMessage> getServiceResponseMessage() {
+        return new MessageDescriptor<>(TriggerResponseMessage.class);
     }
 }

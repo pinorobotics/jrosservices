@@ -18,6 +18,7 @@
 package pinorobotics.jrosservices.msgs;
 
 import id.jrosmessages.Message;
+import id.jrosmessages.MessageDescriptor;
 import pinorobotics.jrosservices.JRosServiceClient;
 
 /**
@@ -44,7 +45,7 @@ import pinorobotics.jrosservices.JRosServiceClient;
  */
 public interface ServiceDefinition<R extends Message, A extends Message> {
 
-    Class<R> getServiceRequestMessage();
+    MessageDescriptor<R> getServiceRequestMessage();
 
-    Class<A> getServiceResponseMessage();
+    MessageDescriptor<A> getServiceResponseMessage();
 }

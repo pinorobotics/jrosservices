@@ -14,3 +14,5 @@
  * @author lambdaprime intid@protonmail.com
  */
 package pinorobotics.jrosservices.metrics;
+
+import id.jrosclient.metrics.JRosClientMetrics;

@@ -17,6 +17,7 @@
  */
 package pinorobotics.jrosservices.std_srvs;
 
+import id.jrosmessages.MessageDescriptor;
 import pinorobotics.jrosservices.msgs.ServiceDefinition;
 
 /** Definition for std_srvs/srv/Empty */
@@ -24,12 +25,12 @@ public class EmptyServiceDefinition
         implements ServiceDefinition<EmptyRequestMessage, EmptyResponseMessage> {
 
     @Override
-    public Class<EmptyRequestMessage> getServiceRequestMessage() {
-        return EmptyRequestMessage.class;
+    public MessageDescriptor<EmptyRequestMessage> getServiceRequestMessage() {
+        return new MessageDescriptor<>(EmptyRequestMessage.class);
     }
 
     @Override
-    public Class<EmptyResponseMessage> getServiceResponseMessage() {
-        return EmptyResponseMessage.class;
+    public MessageDescriptor<EmptyResponseMessage> getServiceResponseMessage() {
+        return new MessageDescriptor<>(EmptyResponseMessage.class);
     }
 }
