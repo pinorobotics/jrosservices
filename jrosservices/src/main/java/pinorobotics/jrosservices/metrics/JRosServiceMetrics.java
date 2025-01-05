@@ -17,23 +17,21 @@
  */
 package pinorobotics.jrosservices.metrics;
 
-import pinorobotics.jrosservices.JRosServiceClient;
-
 /**
- * List of metrics emitted by {@link JRosServiceClient}.
+ * List of metrics emitted by JRosService.
  *
  * @author lambdaprime intid@protonmail.com
  */
-public interface JRosServiceClientMetrics {
+public interface JRosServiceMetrics {
 
-    String REQUESTS_SENT_COUNT_METRIC = "service_sent_requests_total";
-    String REQUESTS_SENT_COUNT_METRIC_DESCRIPTION = "Number of requests sent to ROS services";
+    String REQUESTS_RECEIVED_COUNT_METRIC = "service_received_requests_total";
+    String REQUESTS_RECEIVED_COUNT_METRIC_DESCRIPTION =
+            "Number of requests received by the service";
 
-    String RESPONSES_RECEIVED_COUNT_METRIC = "service_received_responses_total";
-    String RESPONSES_RECEIVED_COUNT_METRIC_DESCRIPTION =
-            "Number of responses received from ROS services";
+    String REQUESTS_FAILED_COUNT_METRIC = "service_failed_requests_total";
+    String REQUESTS_FAILED_COUNT_METRIC_DESCRIPTION = "Number of failed requests";
 
-    String CLIENT_GOAL_EXECUTION_TIME_METRIC = "service_client_exec_time_ms";
-    String CLIENT_GOAL_EXECUTION_TIME_METRIC_DESCRIPTION =
-            "Time in millis client waited to receive a result from the ROS service";
+    String SERVICE_GOAL_EXECUTION_TIME_METRIC = "service_exec_time_ms";
+    String SERVICE_GOAL_EXECUTION_TIME_METRIC_DESCRIPTION =
+            "Time in millis it took ROS service to execute the goal";
 }
