@@ -1,3 +1,11 @@
+# Version 5
+
+- Change ServiceDefinition to use MessageDescriptor instead of a Class
+- Add metrics for JRosService, move all metrics to separate package
+- Renaming 'count' metrics
+
+[jrosservices-v5.0.zip](https://github.com/pinorobotics/jrosservices/raw/main/jrosservices/release/jrosservices-v5.0.zip)
+
 # Version 4
 
 - Updating dependencies

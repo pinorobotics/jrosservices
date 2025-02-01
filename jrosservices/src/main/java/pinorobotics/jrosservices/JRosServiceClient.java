@@ -32,15 +32,15 @@ import java.util.concurrent.Future;
  *     href="https://docs.ros.org/en/galactic/Tutorials/Services/Understanding-ROS2-Services.html">ROS2
  *     Services</a>
  * @see <a href="http://wiki.ros.org/Services">ROS1 Services</a>
- * @param <R> request message type
- * @param <A> response message type
+ * @param <R> service request message type
+ * @param <A> service response message type
  * @author lambdaprime intid@protonmail.com
  */
 public interface JRosServiceClient<R extends Message, A extends Message> extends AutoCloseable {
 
     /**
-     * Send request to ROS service and return a {@link Future} which completes when service execute
-     * the request and sends it back.
+     * Send request to ROS service and return a {@link Future} which completes when service executes
+     * the request and sends the response back.
      */
     CompletableFuture<A> sendRequestAsync(R requestMessage);
 }

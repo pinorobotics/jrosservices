@@ -18,7 +18,7 @@ Gradle:
 
 ```
 dependencies {
-  implementation 'io.github.pinorobotics:jrosservices:4.0'
+  implementation 'io.github.pinorobotics:jrosservices:5.0'
 }
 ```
 
